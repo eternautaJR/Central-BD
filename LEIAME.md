@@ -1,4 +1,4 @@
-# Central de Dashboards - Blue Door Imóveis
+# Central Blue Door Imóveis
 
 Página estática única (HTML/CSS/JS, sem dependências nem build). O logo já está embutido no `index.html`.
 
@@ -9,10 +9,11 @@ Página estática única (HTML/CSS/JS, sem dependências nem build). O logo já 
 4. Endereço: `https://<usuario>.github.io/<repositorio>/`
 
 ## Domínio próprio (opcional)
-Para usar um subdomínio (ex.: `dashboards.bluedoorimoveis.com.br`):
+Para usar um subdomínio (ex.: `central.bluedoorimoveis.com.br`):
 1. No DNS, criar um registro CNAME do subdomínio apontando para `<usuario>.github.io`.
 2. Em Settings > Pages > Custom domain, informar o subdomínio e ativar "Enforce HTTPS".
 
-## Como editar os links
-No final do `index.html`, na lista `ITENS`, ajustar o campo `url` de cada dashboard.
-Para ativar o dashboard de Atendimento, preencher o `url` e remover `soon:true`.
+## Como editar
+No final do `index.html`, na lista `AREAS`, ficam todas as áreas, seções, links e dados.
+- `tipo:"dash"`: dashboard; `tipo:"link"`: link comum; `tipo:"soon"`: em breve; `copias`: botões que copiam o dado.
+- Para ativar o dashboard de Atendimento: trocar `tipo:"soon"` por `tipo:"dash"` e adicionar `url:"..."`.
